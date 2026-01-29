@@ -1,0 +1,6 @@
+[
+  { "id": "F001", "from": "Kyiv", "to": "Warsaw", "date": "2026-02-01", "time": "10:30", "duration": "1h 20m", "price": 79, "seats": 40 },
+  { "id": "F002", "from": "Kyiv", "to": "London", "date": "2026-02-01", "time": "14:10", "duration": "3h 10m", "price": 169, "seats": 22 },
+  { "id": "F003", "from": "Lviv", "to": "Berlin", "date": "2026-02-02", "time": "09:00", "duration": "2h 05m", "price": 129, "seats": 18 },
+  { "id": "F004", "from": "Odesa", "to": "Istanbul", "date": "2026-02-03", "time": "18:45", "duration": "1h 45m", "price": 99, "seats": 10 }
+]
