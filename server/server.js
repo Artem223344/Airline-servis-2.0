@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const DATA_PATH = path.join(__dirname, "flights.json");
 
 function loadFlights() {
@@ -41,7 +41,13 @@ app.get("/flights", (req, res) => {
   res.json(result);
 });
 
-app.listen(PORT, () => {
-  console.log(`🚀 Mock API running: http://localhost:${PORT}`);
-  console.log(`Try: http://localhost:${PORT}/flights`);
-});
+module.exports = app;
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Mock API running: http://localhost:${PORT}`);
+    console.log(`Try: http://localhost:${PORT}/flights`);
+  });
+}
+
+
