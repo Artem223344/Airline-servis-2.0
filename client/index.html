@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airline Service 2.0</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Airline Service 2.0</h1>
+    <nav class="nav">
+      <button data-page="home" class="nav-btn active">Home</button>
+      <button data-page="flights" class="nav-btn">Flights</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="page-home" class="page active">
+      <h2>Search flights</h2>
+
+      <form id="search-form" class="card">
+        <label>From <input id="from" placeholder="Kyiv" /></label>
+        <label>To <input id="to" placeholder="London" /></label>
+        <label>Date <input id="date" type="date" /></label>
+        <button type="submit">Search</button>
+      </form>
+
+      <p class="hint">Backend: <b>http://localhost:3001</b></p>
+    </section>
+
+    <section id="page-flights" class="page">
+      <h2>Flights</h2>
+      <div class="actions">
+        <button id="btn-load">Load all flights</button>
+        <span id="status"></span>
+      </div>
+      <div id="results" class="grid"></div>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
+    
