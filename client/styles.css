@@ -1,0 +1,16 @@
+body { font-family: Arial, sans-serif; margin: 0; }
+.topbar { padding: 16px; border-bottom: 1px solid #ddd; display: flex; gap: 16px; align-items: center; }
+.nav { margin-left: auto; display: flex; gap: 8px; }
+.nav-btn { padding: 8px 12px; cursor: pointer; }
+.nav-btn.active { font-weight: 700; }
+.container { padding: 16px; }
+.page { display: none; }
+.page.active { display: block; }
+.card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; margin-top: 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin-top: 12px; }
+.actions { display: flex; gap: 12px; align-items: center; margin-top: 10px; }
+.muted { color: #666; }
+.hint { margin-top: 12px; }
+label { display: block; margin: 10px 0; }
+input { width: 100%; padding: 8px; margin-top: 4px; }
+button { padding: 10px 12px; }
